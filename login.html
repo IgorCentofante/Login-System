@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+
+    <!--css imports-->
+    <link rel="stylesheet" href="assets/src/css/login.css" />
+    <link rel="stylesheet" href="assets/src/css/reset.css" />
+  </head>
+  <body>
+    <section class="login-area">
+      <div class="main-login">
+        <div class="left-login">
+          <h1>
+            <div class="left-login-title">Faça login</div>
+            e tenha sua casa em suas mãos
+          </h1>
+          <img class="house" src="assets/src/img/smartHouse.svg" />
+        </div>
+
+        <form method="POST">
+          <div class="right-login">
+            <div class="card-login">
+              <h1>Login</h1>
+              <div class="text-field">
+                <label for="usuario">Usuário</label>
+                <input type="text" name="usuario" placeholder="Usuário" />
+              </div>
+              <div class="text-field">
+                <label for="Senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha" />
+              </div>
+              <input type="submit" class="btn-login" value="entrar">
+              <h2 class="switch-mode">
+                Ainda não tem conta? <a href="register.html">criar conta</a>
+              </h2>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+  </body>
+</html>

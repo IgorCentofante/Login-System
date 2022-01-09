@@ -105,17 +105,50 @@ body * {
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00000056;
 }
-.account-recovery{
+.switch-mode{
     color: var(--color);
     font-size: 14px;
 }
-.account-recovery:hover{
+.switch-mode > a{
+    color: var(--color-tertiary);
+    text-decoration: none;
+}
+.switch-mode > a:hover{
     cursor: pointer; 
 }
 
 @media only screen and (max-width: 950px){
     .card-login{
         width: 85%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        right: auto;
+    }
+    .right-login{
+        width: 95%;
+        height: auto;
+        right: auto;
+        margin: auto;
+    }
+    .house{
+        width: 40vw;
+    }
+    .card-login{
+        width: 80%;
+        margin: 1vh 0vh 0.5vh 0vh;
+        padding: 3vh 7vh 3vh 7vh;
+    }
+    .btn-login{
+        margin: 2vh 2vh 3vh 2vh;
     }
 }
 @media only screen and (max-width: 600px){
@@ -130,14 +163,16 @@ body * {
         right: auto;
     }
     .right-login{
-        width: 80%;
+        width: 95%;
+        height: auto;
         right: auto;
+        margin: auto;
     }
     .house{
-        width: 70vw;
+        width: 58vw;
     }
     .card-login{
         width: 90%;
-        margin: 2vh 0vh 5vh 0vh;
+        margin: 1vh 0vh 5vh 0vh;
     }
 }
